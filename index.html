@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Case de Filosofia</title>
+<title>Teste de Filosofia</title>
 <style>
 :root{--bg:#f6f4ef;--card:#fff;--tx:#1f2330;--mu:#5f6578;--ac:#3b4cca;--ok:#1b7f4b;--okb:#e3f5ea;--er:#b3261e;--erb:#fdeceb;--bd:#d9d6cc;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171e;--card:#1e212b;--tx:#eceef5;--mu:#a2a7ba;--ac:#8d9bff;--ok:#6fd6a0;--okb:#17352a;--er:#ff9b93;--erb:#3d1d1b;--bd:#343848}}
@@ -23,8 +23,8 @@ button{font:inherit;cursor:pointer}
 .bar{height:8px;background:var(--bd);border-radius:6px;overflow:hidden;margin:8px 0}.bar i{display:block;height:100%}
 .hide{display:none}.big{font-size:2.6rem;font-weight:700}
 </style></head><body><main>
-<section id="home" class="card"><h1>📚 Case de Filosofia</h1><p>Teste seus conhecimentos com questões elaboradas a partir das suas aulas e slides.</p><button class="btn" onclick="show('case')">Realizar case</button></section>
-<section id="case" class="card hide"><h1>Case de Filosofia</h1><p>O case sorteia 10 questões de um banco de 50. Cada uma tem alternativas de A a E, com dica e explicação a cada resposta.</p><button class="btn" onclick="start()">Iniciar quiz</button> <button class="btn s" onclick="show('home')">Voltar</button></section>
+<section id="home" class="card"><h1>📚 Teste de Filosofia</h1><p>Teste seus conhecimentos com questões elaboradas a partir das suas aulas e slides.</p><button class="btn" onclick="show('case')">Realizar case</button></section>
+<section id="case" class="card hide"><h1>Teste de Filosofia</h1><p>O teste sorteia 10 questões de um banco de 50. Cada uma tem alternativas de A a E, com dica e explicação a cada resposta.</p><button class="btn" onclick="start()">Iniciar quiz</button> <button class="btn s" onclick="show('home')">Voltar</button></section>
 <section id="quiz" class="card hide"><div class="top"><span id="n"></span><span id="sc"></span></div><div class="bar"><i id="pb" style="background:var(--ac)"></i></div><h2 id="q"></h2><div id="o"></div><div id="fb"></div><p><button class="btn hide" id="nx" onclick="next()">Próxima</button></p></section>
 <section id="res" class="card hide"><h1>Resultado final</h1><div class="big" id="pc"></div><p id="rt"></p><div class="bar"><i id="rb" style="background:var(--ok)"></i></div><p id="rs"></p><button class="btn" onclick="start()">Novo quiz</button> <button class="btn s" onclick="show('home')">Início</button></section>
 </main><script>
